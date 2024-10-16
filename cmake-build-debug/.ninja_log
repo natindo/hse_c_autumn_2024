@@ -1,0 +1,24 @@
+# ninja log v6
+31	114	7505285205824160	CMakeFiles/hw2.dir/HW1/task8.c.obj	e0f7b6a5205c393d
+3	43	7505286763846865	CMakeFiles/hw2.dir/main.c.obj	666f9eb209e59fa0
+15	120	7505285205668672	CMakeFiles/hw2.dir/HW1/task4.c.obj	8b19f88583e95a5e
+55	126	7507705513556533	hw2.exe	6af980e62e861b23
+1	199	7507714171098726	build.ninja	dd9481c72fa5182d
+98	186	7505285206495622	CMakeFiles/hw2.dir/HW1/task13.c.obj	f0a9afae63e2741c
+114	188	7505285206661163	CMakeFiles/hw2.dir/sem5/taskC.c.obj	817196376e8e6375
+126	198	7505285206781585	CMakeFiles/hw2.dir/sem5/taskA.c.obj	8ca5f03c32c6dc60
+120	189	7505285206716300	CMakeFiles/hw2.dir/sem5/taskB.c.obj	3e0ddb062acc6dd9
+11	72	7505285205628649	CMakeFiles/hw2.dir/HW1/task3.c.obj	ea890bba71d46f2a
+8	81	7505285205593486	CMakeFiles/hw2.dir/HW1/task2.c.obj	a00fa320eadc048
+3	62	7507670770029085	CMakeFiles/hw2.dir/HW1/task1.c.obj	8c546af35faabd08
+7	61	7507670770059108	CMakeFiles/hw2.dir/HW1/task6.c.obj	aa06cd6c2bfaf090
+18	107	7505285205703727	CMakeFiles/hw2.dir/HW1/task5.c.obj	1c798daf5a6de6f0
+27	126	7505285205789022	CMakeFiles/hw2.dir/HW1/task7.c.obj	15309f5c3d815ad2
+35	130	7505285205884231	CMakeFiles/hw2.dir/HW1/task9.c.obj	e9d98ef641523767
+73	163	7505285206245169	CMakeFiles/hw2.dir/HW1/task10.c.obj	1fe39171cd9e90a0
+94	165	7505285206445637	CMakeFiles/hw2.dir/HW1/task12.c.obj	2e0d46166837d0d0
+107	187	7505285206585911	CMakeFiles/hw2.dir/HW1/task14.c.obj	8c4d989bf6a3a070
+111	193	7505285206621093	CMakeFiles/hw2.dir/HW1/task15.c.obj	8dfcd7dba09a9e0f
+81	199	7505285206320312	CMakeFiles/hw2.dir/HW1/task11.c.obj	1100559343a643c2
+9	62	7507670770089119	CMakeFiles/hw2.dir/HW2/strcat.c.obj	a6629ab9478bdc23
+4	55	7507705513038310	CMakeFiles/hw2.dir/HW2/sudoku.c.obj	7baad860a0e1f7ca
