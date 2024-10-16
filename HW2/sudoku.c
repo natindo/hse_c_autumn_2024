@@ -37,10 +37,10 @@ int checkColumnOrRow(const int columnOrRow[MAXMATRIX])
     return 0;
 }
 
-int checkSudoku(int board[MAXMATRIX][MAXMATRIX])
+int checkSudoku(const int board[MAXMATRIX][MAXMATRIX])
 {
     int columnOrRow[MAXMATRIX] = { 0 };
-    int smallSquare[MAXSMALLSQUARE][MAXSMALLSQUARE] = { 0 };
+
     for (int i = 0; i < MAXMATRIX; i++) {
         for (int j = 0; j < MAXMATRIX; j++) {
             columnOrRow[j] = board[i][j];
@@ -58,6 +58,20 @@ int checkSudoku(int board[MAXMATRIX][MAXMATRIX])
         }
     }
 
+    int smallSquareRow[MAXSMALLSQUARE][MAXSMALLSQUARE] = { 0 };
+
+    for (int squareRow = 0; squareRow < 3; squareRow++) {
+        for (int squareCol = 0; squareCol < 3; squareCol++) {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    smallSquareRow[i][j];
+                }
+            }
+            if (checkSmallSquare(smallSquareRow) != 0) {
+                return smallSquareError;
+            }
+        }
+    }
     return 0;
 }
 
