@@ -1,45 +1,44 @@
 #include <stdio.h>
+#include <string.h>
 
-#define MAXNUMBERINIP 4
+#define MAXIPLENGTH 15
 
-void initArray(int ipAddress[][MAXNUMBERINIP], int n) {
+enum {
+    scanfError = -1
+};
+
+int main()
+{
+    int n = 0, m = 0;
+
+    if (!scanf("%d", &n)) {
+        return scanfError;
+    }
+    char ipAddressRequest[n][MAXIPLENGTH];
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < MAXNUMBERINIP; j++) {
-            ipAddress[i][j] = 0;
+        if (!scanf("%s", ipAddressRequest[i])) {
+            return scanfError;
         }
     }
-}
 
-int main () {
-    int n = 0;
-    scanf("%d", &n);
-    int ipAddress[n][MAXNUMBERINIP];
-
-    initArray(ipAddress, n);
-    int Octet = 0;
-
-    for (int i = 0; i < n; i++) {
-        char c = ' ';
-        while (c = getchar() != '\n') {
-            
+    if (!scanf("%d", &m)) {
+        return scanfError;
+    }
+    for (int i = 0; i < m; i++) {
+        char ipAddressCheck[MAXIPLENGTH] = { 0 };
+        if (!scanf("%s", ipAddressCheck)) {
+            return scanfError;
+        }
+        for (int j = 0; j < n; j++) {
+            if (strcmp(ipAddressRequest[j], ipAddressCheck) == 0) {
+                printf("yes\n");
+                break;
+            }
+            if (j + 1 == n) {
+                printf("no\n");
+                break;
+            }
         }
     }
-    
-
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < MAXNUMBERINIP; j++) {
-            scanf("%d", &Octet);
-            ipAddress[i][j] = Octet;    
-        }
-    }
-    
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < MAXNUMBERINIP; j++) {
-            printf("%d ", ipAddress[i][j]);
-        }
-        printf("\n");
-    }
-
     return 0;
 }
