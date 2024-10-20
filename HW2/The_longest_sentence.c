@@ -1,4 +1,5 @@
 // #include <stdio.h>
+// #include <string.h>
 //
 // enum {
 //     fileNotOpen = -1
@@ -17,32 +18,34 @@
 //     while (c != EOF) {
 //         int counter = 0, i = 0;
 //         char tempBuff[256] = { 0 };
-//         while (c != '.') {
+//         while (c != '.' && c != EOF) {
 //             if (c == ' ' || c == '\n') {
 //                 counter++;
 //             }
 //             tempBuff[i++] = c;
-//             c = fgetc(file);
-//         }
-//         if (counter > result) {
-//             result = counter;
-//             i = 0;
-//             char d = tempBuff[i];
-//             while (d != '\0') {
-//                 buff[i] = tempBuff[i];
-//                 i++;
-//                 d = tempBuff[i];
+//             if (c != EOF) {
+//                 c = fgetc(file);
 //             }
 //         }
-//         c = fgetc(file);
+//         // add dot in array
+//         tempBuff[i] = c;
+//         if (counter > result) {
+//             result = counter;
+//             strcpy(buff, tempBuff);
+//         }
+//         if (c != EOF) {
+//             c = fgetc(file);
+//         }
 //     }
 //     // +1 due to space
-//     int i = 1;
-//     c = buff[i];
-//     while (c != '\0') {
-//         printf("%c", c);
-//         c = buff[++i];
-//     }
+//     printf("%s", buff);
+//     // int i = 1;
+//     // c = buff[i];
+//     // while (c != '\0') {
+//     //     printf("%c", c);
+//     //     c = buff[++i];
+//     // }
 //     printf("\n%d", result);
+//     fclose(file);
 //     return 0;
 // }
