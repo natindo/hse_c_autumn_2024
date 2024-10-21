@@ -1,34 +1,37 @@
-const char* cool_strstr(const char* str1, const char* str2)
-{
-    while (*str1) {
-        if (*str1 == *str2) {
-        }
-        str1++;
-    }
-}
+// #include <stdio.h>
+// #include <string.h>
+// const char* cool_strstr(const char* str1, const char* str2)
+// {
+//     const char* ptrStr1 = 0;
+//     const char* ptrStr2 = 0;
+//     while (*str1) {
+//         if (*str1 == *str2) {
+//             int flag = 1;
+//             ptrStr1 = str1;
+//             ptrStr2 = str2;
 //
-// char * strstr (const char * haystack, const char * needle) {
-//     char * needle_ptr = NULL, * haystack_ptr = NULL;
-//
-//     if (haystack == NULL || needle == NULL)
-//         return NULL;
-//
-//     while (*haystack) {
-//
-//         if (*haystack == *needle) {
-//             int trigger_out = 1;
-//
-//             needle_ptr = needle;
-//             haystack_ptr = haystack;
-//
-//             while (*needle_ptr && *haystack_ptr) {
-//                 trigger_out = trigger_out && (*needle_ptr == *haystack_ptr);
+//             while (*ptrStr1 && *ptrStr2) {
+//                 flag &= *ptrStr1 == *ptrStr2;
+//                 ptrStr1++;
+//                 ptrStr2++;
 //             }
 //
-//             if (trigger_out)
-//                 return haystack;
+//             if (flag) {
+//                 return str1;
+//             }
 //         }
-//         ++haystack;
+//         str1++;
 //     }
-//     return NULL;
+//     return 0;
+// }
+//
+// int main()
+// {
+//     const char* str1 = "aaabbba";
+//     const char* str2 = "ab";
+//     const char* str3 = cool_strstr(str1, str2);
+//     for (int i = 0; i < strlen(str3); i++) {
+//         printf("%c", str3[i]);
+//     }
+//     return 0;
 // }
