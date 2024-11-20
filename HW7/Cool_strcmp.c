@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 
 int cool_strcmp(const char* str1, const char* str2)
 {
